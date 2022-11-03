@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Agendar consulta</title>
+    <style>
+      label {
+        width: 100px;
+        height: 15px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 15px; 
+      }
+      input, textarea {
+        border: none;
+        margin-top: 5px;
+      }
+      button {
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        margin: 5px 105px;
+      }
+      textarea {
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+      fieldset{
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(32, 173, 162);
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+              <a style="color: rebeccapurple;" href="index.html" ><strong> Home </strong> </a>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+              <img title="gatos" src="public/pexels-александар-.jpg" alt="Pata de gato sobre um teclado" width="700px"  height="205px">
+            </div>
+    
+            <div class="content">
+                <!-- Aqui vai o seu conteúdo -->
+                <fieldset>
+                  <h2>Agende um horário com nossos veterinários</h2>
+                  Nosso número para ligar:
+                  <a href="tel:+5583999999999">(83) 99999-9999</a><br>
+                  <a href="contato@clinicaveterinaria.com.br"></a>
+                  Nosso Whatsapp: <a href="tel:+5583933333333">(83) 93333-3333</a><br>
+                  <p></p>
+                  <form action="agenda" method="post">
+                    <label for="">Nome*:</label><input type="text"><br>
+                    <label for="">Celular*: </label><input type="tel" id="telefone" required placeholder="(xx) xxxxx-xxxx"><br>
+                    <label for="">E-mail*: </label><input type="email" > <br>
+                    <label for="">Assunto*:</label><input type="text"><p></p>
+                    <label for="">Mensagem*:</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea><p></p>
+                    <button type="reset">Limpar </button><br>
+                    <button type="submit" onmouseover="alert('Enviado!')" >Enviar</button><br/>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19384.381817325135!2d-34.868240694747485!3d-7.11960732896738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace7e171a937cf%3A0x5a1076421065d650!2sParque%20da%20Lagoa%20-%20Solon%20de%20Lucena!5e0!3m2!1spt-BR!2sbr!4v1667346087127!5m2!1spt-BR!2sbr" width="960" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </form>
+                </fieldset>    
+            </div>
+    
+            <div class="footer">
+                Footer<br/>
+                <div class="tel">
+                  <a href="tel:+5583999999999"> Telefone: (83) 99999-9999</a><br>
+                  <a href="tel:+5583933333333"> Whatsapp: (83) 93333-3333</a><br>
+                  <a href="contato@clinicaveterinaria.com.br"> E-mail: contato@clinicaveterinaria.com.br</a> <br/>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
